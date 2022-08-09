@@ -33,7 +33,7 @@ with open("member_name_list.txt") as file:  # saving the urls in a new list
     count=0 # creating a counter to make the terminal process more appealing
 
     for line in lines:
-        q=requests.get(line)
+        q=requests.get(line) # requesting the data from the new list
         result=q.content
 
         scrapper=BeautifulSoup(result,'lxml')
