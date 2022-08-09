@@ -25,7 +25,7 @@ with open('member_name_list.txt','a') as file: # saving the urls to a txt file
     for line in member_name_list:
         file.write(f'{line}\n')
 
-with open("member_name_list.txt") as file:  # getting the urls from the saved file
+with open("member_name_list.txt") as file:  # saving the urls in a new list
 
     lines=[line.strip() for line in file.readlines()]
 
